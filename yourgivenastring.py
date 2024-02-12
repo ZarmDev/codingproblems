@@ -20,18 +20,22 @@ for z in range(len(strInput)):
 		uniqueOccurances.append(occurance)
 	# print(strInput[z:len(strInput)])
 
-# print(uniqueOccurances)
+print(uniqueOccurances)
 
 highscore = 0
 highestAmount = ''
 
 for i in uniqueOccurances:
 	timesappeared = strInput.count(i)
-	# print(i, timesappeared)
+	print(i, timesappeared)
 	if timesappeared > highscore:
 		highscore = timesappeared
 		highestAmount = i
 
-print(highestAmount)
+# must be atleast 2
+if highscore >= 2:
+	print(highscore)
+else:
+	print(0)
 
 # then find the count the amount fo that substring
