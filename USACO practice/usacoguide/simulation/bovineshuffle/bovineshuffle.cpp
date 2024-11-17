@@ -43,7 +43,9 @@ int main() {
 
 	// three shuffles
 	for (int t = 0; t < 3; t++) {
-		vector<int> temporaryNewArr(5);
+		// THIS WAS THE PROBLEM !U*@#*U(@*@*U
+		// I PUT 5 INSTEAD OF N!!!!
+		vector<int> temporaryNewArr(n);
 		// now SHUFFLE!
 		for (int i = 0; i < n; i++) {
 			// go from i -> shuffleLocations[i] and reverse: shuffleLocations[i] (3) -> i (2)
