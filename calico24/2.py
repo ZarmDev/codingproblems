@@ -1,3 +1,5 @@
+import math
+
 def solve():
     word = input()
     c = ["u", "n", "c"]
@@ -29,8 +31,8 @@ def solve():
     if max(letters) == letters[0]:
         # make sure definitivaly that c is bigger than the rest
         if (letters[0] / 2) > max(letters[1:]):
-            # use c then
-            print(round(letters[0] / 2))
+            # use c then, round up because you need extra calico characters
+            print(math.ceil(letters[0] / 2))
             return
         else:
             print(max(letters[1:]))
